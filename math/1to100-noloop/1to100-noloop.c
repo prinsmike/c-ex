@@ -1,18 +1,18 @@
 #include<stdio.h>
 
-void hundred() {
+void one() {
 	static int i=1;
 	printf("%d\n", i++);
 }
 
-void twenty() {
-	hundred(),hundred(),hundred(),hundred(),hundred();
+void five() {
+	one(),one(),one(),one(),one();
 }
 
-void four() {
-	twenty(),twenty(),twenty(),twenty(),twenty();
+void twentyfive() {
+	five(),five(),five(),five(),five();
 }
 
 int main() {
-	four(),four(),four(),four();
+	twentyfive(),twentyfive(),twentyfive(),twentyfive();
 }
